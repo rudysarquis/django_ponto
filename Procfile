@@ -1,0 +1,1 @@
+web: gunicorn django_pontos_turisticos.wsgi --log-file
