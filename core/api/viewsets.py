@@ -11,8 +11,8 @@ class PontoTuristicoViewSet(ModelViewSet):
     serializer_class = PontoTuristicoSerializer
     filter_backends  = (SearchFilter,)
     search_fields = ('nome', 'descricao')
-   # permission_classes = (IsAuthenticated,)
-    #authentication_classes = (TokenAuthentication,)
+    #permission_classes = (IsAuthenticated,)
+   # authentication_classes = (TokenAuthentication,)
     lookup_field = 'nome'
 
     def get_queryset(self):
